@@ -18,8 +18,4 @@ def clean(file_in: str):
         except (ValueError, TypeError):
             pass
     d = {k: v for (k, v) in zip(keys, vaules)}
-    y = json.dumps(d)
-    print(y)
-    with open(file_in.strip('.csv') + '.json', 'wt', encoding='utf-8') as js:
-        js.write(y)
-    return d
+    return json.dumps(d)
