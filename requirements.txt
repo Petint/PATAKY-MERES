@@ -1,7 +1,6 @@
 [global]
 find-links =
     git+<https://github.com/Petint/PetintLib>
-
 matplotlib>=2.2
 numpy>=1.15.0, <1.21.0
 pandas
