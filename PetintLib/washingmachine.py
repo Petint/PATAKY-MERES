@@ -6,7 +6,7 @@ import json
 
 def clean(file_in: str):
     """Turn saved waveforms into usable data"""
-    with open(file_in, 'rt', encoding='utf-8') as du:
+    with open(file_in, 'rt') as du:
         data = du.read().splitlines()
     data = [n.split(',') for n in data]
     keys = [f[0] for f in data[:13]]
