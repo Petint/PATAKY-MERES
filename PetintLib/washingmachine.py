@@ -18,7 +18,7 @@ class Waveform:
         self.param = {k: v for (k, v) in zip(keys, vaules)}
 
     def __str__(self):
-        from autotable import Table
+        from PetintLib import Table
         tab = Table(self.param)
         return tab.make()
 
